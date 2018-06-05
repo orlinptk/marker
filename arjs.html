@@ -1,0 +1,23 @@
+<html>
+ <html>
+
+<!-- include ar.js for A-Frame -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded artoolkit='sourceType: webcam;'>
+    <a-assets>
+      <a-asset-item id="mtl" src="./plants1.mtl"></a-asset-item>
+        <a-asset-item id="obj" src="./plants1.obj"></a-asset-item>
+  </a-assets>
+<!-- use your gltf model -->
+  <a-entity obj-model="obj: #obj; mtl: #mtl;" position="0 0.5 0" rotation='-19.4 100.3 -61.4'  scale=" 0.006 0.006 0.006"></a-entity>
+    <a-marker-camera preset='hiro'></a-marker-camera>
+    <!--<a-marker preset='hiro'>
+      <a-entity obj-model="obj: #obj; mtl: #mtl;" position="0 0.5 0" rotation='-19.4 100.3 -61.4'  scale=" 0.006 0.006 0.006"></a-entity>
+    </a-marker>-->
+  </a-scene>
+</body>
+</html>
+
+</html>
